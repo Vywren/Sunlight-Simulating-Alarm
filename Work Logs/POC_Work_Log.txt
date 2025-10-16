@@ -1,0 +1,23 @@
+10/7/2025:
+Working on toolchain from this guide
+https://shawnhymel.com/2096/how-to-set-up-raspberry-pi-pico-c-c-toolchain-on-windows-with-vs-code/ 
+Lots of issues with admin permissions
+
+10/8/2025:
+Still no idea why admin permissions are not working well on main user even though it’s also an admin. Switched to administrator account to run installers and it seems to work.
+Got this error: mingw32-make[2]: *** [CMakeFiles\blink.dir\build.make:1341: blink.elf] Error -1073741819
+the guide recommends trying the official raspberry pi plugin
+https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf 
+
+10/9/2025:
+Turns out the “plugin” is just the pico extension on vscode. It works and I can run the examples on it
+
+
+10/13/2025:
+Created a new project. Testing serial output but struggling to find COM ports in windows 11
+
+10/14/2025:
+It wasn't an issue with windows 11, I enabled com ports and then realized that the reason it wasn't communicating to console is because there’s an option to communicate over USB or UART and I made the project with UART. Started to work with the time.h library. The pico considers when it boots up to be January 1 1970 so I need a way to give it the current time.
+
+10/15/2025:
+Moving work logs to this document so I can document progress in Github 
