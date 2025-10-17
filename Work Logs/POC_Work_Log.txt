@@ -21,3 +21,6 @@ It wasn't an issue with windows 11, I enabled com ports and then realized that t
 
 10/15/2025:
 Moving work logs to this document so I can document progress in Github 
+
+10/16/2025:
+uploaded C file to GitHub and read through documentation on using Pico APIs
